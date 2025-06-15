@@ -62,6 +62,6 @@ jobs:
           # Export TARGET_BRANCH for use in this step
           echo "Using branch: ${GITHUB_REF_NAME}"
           snow git execute @Snowflake_Git_Integ/branches/main/sql_files/.*sql \
-          -D "env='${{  }}'" \
+          -D "env='${{ env.DEPLOY_ENV }}'" \
           --database=COURSE_REPO \
           --schema=PUBLIC
