@@ -68,5 +68,5 @@ jobs:
           echo "Using branch: ${GITHUB_REF_NAME}"
           snow git execute @Snowflake_Git_Integ/branches/${GITHUB_REF_NAME}/sql_files/.*sql \
           -D "env='${{ env.DEPLOY_ENV }}'" \
-          --database=COURSE_REPO \
+          --database=DEV2 \
           --schema=PUBLIC
