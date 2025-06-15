@@ -1,0 +1,14 @@
+default_connection_name="advanced_data_engineering_snowflake"
+
+[connections]
+[connections.advanced_data_engineering_snowflake]
+account = "PBXUDTW-VY63582"
+user = "HALEXE"
+password = "J2ZA.e4TNHuWw_B"
+warehouse = "COMPUTE_WH"
+role = "ACCOUNTADMIN"
+
+[cli.logs]
+save_logs = true
+path = "C:\\Users\\Alexei Beuno\\AppData\\Local\\snowflake\\logs"
+level = "info"
