@@ -44,6 +44,11 @@ jobs:
             echo "Unexpected branch: $TARGET_BRANCH"
             exit 1
           fi
+      - name: Debug environment variables
+        run: |
+         echo "Account: ${{ secrets.SNOWFLAKE_ACCOUNT != '' }}"
+         echo "User: ${{ secrets.SNOWFLAKE_USER != '' }}"
+         echo "Password: ${{ secrets.SNOWFLAKE_PASSWORD != '' }}"
 
       # Install Snowflake CLI GitHub Action and point to config file
       - name: Install SnowflakeCLI
