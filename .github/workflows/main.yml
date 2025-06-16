@@ -59,7 +59,7 @@ jobs:
 
       # Fetch latest changes from the repository to Snowflake
       - name: Fetch latest changes to Snowflake
-        run: snow git fetch course_repo.public.SNOW_GIT_INTEGRATION
+        run: snow git fetch course_repo.public.SNOW_GIT_INTEG
 
       # Deploy templates to the data environment -
       - name: Deploy templates to data environment
